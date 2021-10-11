@@ -1,0 +1,11 @@
+functions:
+  myCustomResolver:
+    type: resolver
+    handler:
+      code: src/resolvers/myCustomResolver/handler.ts
+    schema: src/resolvers/myCustomResolver/schema.graphql
+  myCustomTrigger:
+    type: trigger.before
+    handler:
+      code: src/triggers/myCustomTrigger/handler.ts
+    operation: Users.create
